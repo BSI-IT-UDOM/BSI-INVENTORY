@@ -1,0 +1,98 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    @apply font-times;
+  }
+
+
+  html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  @media only screen and (max-width: 640px) {
+    #createButton{
+      margin-bottom: 8px !important;
+    }
+  }
+
+
+  @media only screen and (max-width: 1280px) {
+    #dashboard{
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+
+  @media only screen and (max-width: 1024px) {
+    #dashboard{
+      grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+  }
+
+  @media only screen and (max-width: 830px) {
+    #dashboard{
+      grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    #createButton{
+      margin-bottom: 8px !important;
+    }
+
+    .custom-grid {
+      margin-left: 3% !important;
+      width: 90% !important;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+      justify-items: center;
+      align-items: center;
+  }
+  }
+
+  @media only screen and (max-width: 620px) {
+    .custom-grid {
+      margin-left: 3% !important;
+      width: 100% !important;
+  }
+  .custom-grid i {
+    font-size: 50px;
+  }
+  }
+  
+  
+  @media only screen and (max-width: 500px) {
+    .custom-grid {
+      margin-left: -2% !important;
+      width: 100% !important;
+  }
+  .custom-grid i {
+    font-size: 40px;
+  }
+  }
+  @media only screen and (max-width: 440px) {
+    .custom-grid {
+      margin-left: -3% !important;
+      width: 100% !important;
+  }
+  .custom-grid i {
+    font-size: 30px;
+  }
+  .custom-grid .border-2{
+    height: 50px !important;
+    width: 50px !important;
+  }
+  }
+  /* #logout-form{
+    margin-top: -10px;
+  } */
+
+.footer p{
+  margin-bottom: 0 !important;
+}
+  
